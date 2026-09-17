@@ -1,0 +1,18 @@
+{
+  "mcpServers": {
+    "kiranacredit-local": {
+      "command": "uv",
+      "args": [
+        "run",
+        "--with",
+        "mcp[cli]",
+        "mcp",
+        "run",
+        "C:\\ABSOLUTE\\PATH\\TO\\KiranaCredit-Agent-Pack\\claude_desktop_mcp\\server.py"
+      ],
+      "env": {
+        "KIRANACREDIT_PROJECT_ROOT": "C:\\ABSOLUTE\\PATH\\TO\\YOUR\\KiranaCredit\\PROJECT"
+      }
+    }
+  }
+}
