@@ -1,50 +1,54 @@
-# KiranaCredit AI — Free-Agent Hackathon Pack
+# KiranaCredit AI
 
-This pack is designed for a fast multi-agent build using:
-- Google Antigravity as the primary builder
-- OpenCode as the backend/data/debug specialist
-- Claude Desktop as a reviewer/planner and optional local MCP client
+### Turn everyday business activity into credit readiness.
 
-## Important
-The included Claude Desktop integration is a **local MCP server**. It does not give Claude Desktop paid Claude Code/Cowork features. It gives Claude Desktop local project tools through MCP.
+KiranaCredit AI is a FinTech prototype designed to help small
+merchants understand their financial health, explore modeled
+borrowing capacity, and identify practical steps toward better
+credit readiness.
 
-The MCP server is intentionally conservative:
-- project listing
-- safe file reading
-- project status
-- financial-model inspection
-- a curated prompt for reviewing the hackathon build
+---
 
-It does NOT execute arbitrary shell commands or modify/delete files.
+## The Problem
 
-## Quick setup (Windows)
+Small merchants generate valuable business signals every day through
+sales, supplier payments, expenses, debt repayments, and digital
+transactions.
 
-1. Extract this folder somewhere permanent, e.g.
-   `C:\Users\<YOU>\Documents\KiranaCredit-Agent-Pack`
+However, these signals may not be structured into a simple,
+explainable picture of financial health and credit readiness.
 
-2. Put/copy your actual KiranaCredit project path into the MCP server configuration by setting:
-   `KIRANACREDIT_PROJECT_ROOT`
+KiranaCredit AI addresses this gap by turning recorded business
+activity into understandable financial insights.
 
-3. Install `uv` if you don't already have it.
+---
 
-4. Open PowerShell in `claude_desktop_mcp` and run:
-   `.\install_claude.ps1 -ProjectRoot "C:\path\to\your\KiranaCredit"`
+## Our Solution
 
-5. Restart Claude Desktop.
+KiranaCredit AI follows a simple journey:
 
-6. In Claude Desktop, use the connected MCP tools to inspect the project.
+**Business Activity → Financial Health → Borrowing Simulation → Credit Building**
 
-## Agent order tonight
+The prototype provides:
 
-1. Antigravity: architecture + core implementation
-2. OpenCode: financial engine + data + debugging
-3. Antigravity: UI polish + demo flow
-4. Claude Desktop: judge review + final checklist
+- Financial Health Score
+- Cash-flow analysis
+- Explainable financial factors
+- Modeled borrowing capacity
+- Loan affordability simulation
+- Credit Builder recommendations
 
-See the prompt files in:
-- `antigravity/`
-- `opencode/`
-- `claude_desktop/`
+---
 
-## Safety
-Do not put API keys in these files. Do not expose real customer/banking data. Use synthetic hackathon data.
+## Product Journey
+
+```text
+Landing
+   ↓
+Overview
+   ↓
+Financial Health
+   ↓
+Loan Simulator
+   ↓
+Credit Builder
